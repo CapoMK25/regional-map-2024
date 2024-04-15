@@ -2,6 +2,10 @@
 
 LINK TO NEW TEST-SITE: https://capomk25.github.io/regional-map-2024/
 
+## 15.4.2024 Roadmap for the future clear.
+
+In the near-future, the plan is to start moving this project over to AWS by hosting it on the cloud platform.
+
 ## This is the repository for our project.
 This is a original school project made by students Jesse Hirvassalo, Matias Kuismanen and Santeri Arponen during the Fall 2021 semester. This 2024 fork has been forked over by me later on to work on later as a showcase of my technical and visionary capabilities with the Leaflet library, as well as other things. Any further updates related to this fork will be notified here later on. 
 
