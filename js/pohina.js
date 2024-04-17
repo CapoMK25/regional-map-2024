@@ -328,9 +328,9 @@
     
     
         helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>").openPopup();
-        helsinkice.bindPopup("<b>This is a nice central area in Helsinki with a lot of everyday services and activities.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila").openPopup();
-        helsinkise.bindPopup("<b>This is a quieter area and more secluded area that still has a good amount of services.</b><br></br>Helsinki Southeast:<br>Kulosaari, Herttoniemi, Roihuvuori").openPopup();
-        helsinkiwe.bindPopup("<b>This is a quieter area and more secluded area that still has a good amount of services.</b><br></br>Helsinki West:<br>Haaga, Pitäjänmäki, Kannelmäki").openPopup();
+        helsinkice.bindPopup("<b>This is a nice central area in Helsinki with a lot of everyday services and activities.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>").openPopup();
+        helsinkise.bindPopup("<b>This is a quieter area and more secluded area that still has a good amount of services.</b><br></br>Helsinki Southeast:<br>Kulosaari, Herttoniemi, Roihuvuori<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/East_Helsinki' target='_blank'>Click here</a>").openPopup();
+        helsinkiwe.bindPopup("<b>This is a quieter area and more secluded area that still has a good amount of services.</b><br></br>Helsinki West:<br>Haaga, Pitäjänmäki, Kannelmäki<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Western_major_district_of_Helsinki' target='_blank'>Click here</a>").openPopup();
     
         for(let i=0; i<fo1.length; i++)
     
@@ -394,7 +394,7 @@
     
     
         helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>").openPopup();
-        helsinkice.bindPopup("<b>A lot of services are found at this area.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila").openPopup();
+        helsinkice.bindPopup("<b>A lot of services are found at this area.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>").openPopup();
         helsinkie.bindPopup("<b>A lot of services are found at this area.</b><br></br>Helsinki East:<br>Itäkeskus<br>Myllypuro").openPopup();
     
         for(let i=0; i<fo1.length; i++)
@@ -561,7 +561,7 @@
     
     
         helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>").openPopup();
-        helsinkice.bindPopup("<b>This might be a good area for you.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila").openPopup();
+        helsinkice.bindPopup("<b>This might be a good area for you.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>").openPopup();
         helsinkie.bindPopup("<b>This might be a good area for you.</b><br></br>Helsinki East:<br>Itäkeskus<br>Myllypuro").openPopup();
     
         for(let i=0; i<fo1.length; i++)
