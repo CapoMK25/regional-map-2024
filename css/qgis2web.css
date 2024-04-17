@@ -42,8 +42,8 @@ h1 {
     font-weight: 200;
     font-style: normal;
     text-transform: uppercase;
-    color: #fff;
-    background-color: #000;
+    color: #213338;
+    background-color: rgba(141, 212, 225, 0.9);
     border: 2px solid transparent;
     border-radius: 0.25rem;
     cursor: pointer;
@@ -52,7 +52,7 @@ h1 {
 
 .button:hover,
 .button:focus {
-    background-color: #333;
+    background-color: #23ecfe;
     transform: translateY(-2px); /* Adding slight upward movement on hover */
 }
 
@@ -74,10 +74,10 @@ h1 {
     padding: 2%;
     border-radius: 25px;
     border: 2px solid #000;
-    background-color: rgba(200, 205, 226, 0.9);
+    background-color: rgba(141, 212, 225, 0.9);
     margin: 0 auto;
     max-width: 80%;
-    transition: background-color 0.3s, border-color 0.3s; /* Adding transition */
+    transition: background-color 0.5s, border-color 0.4s; /* Adding transition */
 }
 
 .transbox:hover {
@@ -145,5 +145,5 @@ h1 {
 }
 
 .button {
-    animation: floating 3s infinite; /* Apply the animation to the button */
+    animation: floating 6s infinite; /* Apply the animation to the button */
 }
