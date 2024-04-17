@@ -13,7 +13,7 @@
     function Pohina() {
 
 
-        // var declarations for input id elements //
+        // let declarations for input id elements //
     
         // group 1 //
         const rd1 = document.getElementById("pt");
@@ -57,13 +57,10 @@
     
         layer_GoogleHybrid_0.setOpacity(0.8);
     
-        helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö").openPopup();
-        helsinkice.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila").openPopup();
+        helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>").openPopup();
+        helsinkice.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila<br></br>Learn more: https://en.wikipedia.org/wiki/Pasila").openPopup();
     
-    
-    
-    
-        for(var i=0; i<fo1.length; i++)
+        for(let i=0; i<fo1.length; i++)
     
     
         fo1[i].checked = false;
@@ -91,13 +88,11 @@
         
         layer_GoogleHybrid_0.setOpacity(0.8);
     
-        helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö").openPopup();
+        helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>").openPopup();
         helsinkie.bindPopup("<b>You also might like cheaper housing prices and good service availability.</b><br></br>Helsinki East:<br>Itäkeskus, Myllypuro, Kontula").openPopup();
         helsinkise.bindPopup("<b>You like good public transport and good housing.</b><br></br>Helsinki Southeast:<br>Kulosaari, Herttoniemi, Roihuvuori").openPopup();
     
-    
-    
-        for(var i=0; i<fo1.length; i++)
+        for(let i=0; i<fo1.length; i++)
     
     
         fo1[i].checked = false;
@@ -129,13 +124,11 @@
     
         helsinkie.bindPopup("<b>You might like cheaper housing prices and good service availability.</b><br></br>Helsinki East:<br>Itäkeskus, Myllypuro, Kontula").openPopup();
         helsinkine.bindPopup("<b>You like cheaper housing prices and okay service availability. These areas also have good public transport.</b><br></br>Helsinki Northeast:<br>Malmi, Puistola, Tapanila").openPopup();
-    
-    
-    
-    for(var i=0; i<fo1.length; i++)
-    
-    
-    fo1[i].checked = false;
+        
+        for(let i=0; i<fo1.length; i++)
+        
+        
+        fo1[i].checked = false;
     
     
     }
@@ -168,9 +161,7 @@
         helsinkine.bindPopup("<b>You prefer good parking and a quieter area.</b><br>Helsinki Northeast:<br>Malmi, Puistola, Tapanila").openPopup();
         oster.bindPopup("<b>You prefer good parking and a quieter area.</b><br>Östersundom<br>Salmenkallio, Karhusaari, Puroniitty").openPopup();
     
-    
-    
-        for(var i=0 ;i<fo1.length; i++)
+        for(let i=0 ;i<fo1.length; i++)
     
         
     
@@ -202,10 +193,9 @@
     
         helsinkise.bindPopup("<b>You prefer okay service availability, good parking and a quieter area.</b><br>Helsinki Southeast:<br>Kulosaari, Herttoniemi, Roihuvuori").openPopup();
         oster.bindPopup("<b>You prefer good parking and a quieter area.</b><br>Östersundom:<br>Salmenkallio, Karhusaari, Puroniitty").openPopup();
+
     
-    
-    
-        for(var i=0 ;i<fo1.length; i++)
+        for(let i=0 ;i<fo1.length; i++)
     
         
     
@@ -242,9 +232,8 @@
     
     
         helsinkie.bindPopup("<b>You prefer okay service availability, good parking and a cheaper area.</b><br>Helsinki East:<br>Itäkeskus, Myllypuro, Kontula").openPopup();
-    
-    
-        for(var i=0 ;i<fo1.length; i++)
+        
+        for(let i=0 ;i<fo1.length; i++)
     
         
     
@@ -278,9 +267,7 @@
         helsinkin.bindPopup("<b>You prefer cheap housing prices.</b><br></br>Helsinki Northeast:<br>Malmi, Puistola, Tapanila").openPopup();
         helsinkie.bindPopup("<b>You prefer cheap housing prices.</b><br></br>Helsinki East:<br>Itäkeskus<br>Myllypuro").openPopup();
     
-    
-    
-        for(var i=0; i<fo1.length; i++)
+        for(let i=0; i<fo1.length; i++)
     
         fo1[i].checked = false;
     
@@ -310,8 +297,7 @@
     
         helsinkine.bindPopup("<b>You prefer cheap housing prices.</b><br></br>Helsinki Northeast:<br>Malmi, Puistola, Tapanila").openPopup();
     
-    
-        for(var i=0; i<fo1.length; i++)
+        for(let i=0; i<fo1.length; i++)
     
         fo1[i].checked = false;
     
@@ -341,14 +327,12 @@
         layer_GoogleHybrid_0.setOpacity(0.8);
     
     
-        helsinkis.bindPopup("<b>This is the most central area available with the highest housing prices.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö").openPopup();
+        helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>").openPopup();
         helsinkice.bindPopup("<b>This is a nice central area in Helsinki with a lot of everyday services and activities.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila").openPopup();
         helsinkise.bindPopup("<b>This is a quieter area and more secluded area that still has a good amount of services.</b><br></br>Helsinki Southeast:<br>Kulosaari, Herttoniemi, Roihuvuori").openPopup();
         helsinkiwe.bindPopup("<b>This is a quieter area and more secluded area that still has a good amount of services.</b><br></br>Helsinki West:<br>Haaga, Pitäjänmäki, Kannelmäki").openPopup();
     
-    
-    
-        for(var i=0; i<fo1.length; i++)
+        for(let i=0; i<fo1.length; i++)
     
         fo1[i].checked = false;
     
@@ -380,11 +364,8 @@
         helsinkiwe.bindPopup("<b>The price of housing is irrelevant to you but you prefer a quieter area.</b><br></br>Helsinki West:<br>Haaga, Pitäjänmäki, Kannelmäki").openPopup();
         helsinkise.bindPopup("<b>The price of housing is irrelevant to you but you prefer a quieter area.</b><br></br>Helsinki Southeast:<br>Kulosaari, Herttoniemi, Roihuvuori").openPopup();
         oster.bindPopup("<b>The price of housing is irrelevant to you but you prefer a quieter area.</b><br></br>Östersundom:<br>Salmenkallio, Karhusaari, Puroniitty").openPopup();
-    
-    
-    for(var i=0; i<fo1.length; i++)
-    
-    fo1[i].checked = false;    
+            
+        fo1[i].checked = false;    
     
     
     
@@ -412,13 +393,11 @@
         layer_GoogleHybrid_0.setOpacity(0.8);
     
     
-        helsinkis.bindPopup("<b>Most services are found at this area.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö").openPopup();
+        helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>").openPopup();
         helsinkice.bindPopup("<b>A lot of services are found at this area.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila").openPopup();
         helsinkie.bindPopup("<b>A lot of services are found at this area.</b><br></br>Helsinki East:<br>Itäkeskus<br>Myllypuro").openPopup();
     
-    
-    
-        for(var i=0; i<fo1.length; i++)
+        for(let i=0; i<fo1.length; i++)
     
         fo1[i].checked = false;
     
@@ -449,10 +428,8 @@
     
         helsinkine.bindPopup("<b>This area has ok service availability and not a lot of noise.</b><br></br>Helsinki Northeast:<br>Malmi, Puistola, Tapanila").openPopup();
         helsinkise.bindPopup("<b>This area has ok service availability and not a lot of noise.</b><br></br>Helsinki Southeast:<br>Kulosaari, Herttoniemi, Roihuvuori").openPopup();
-    
-    
-    
-        for(var i=0; i<fo1.length; i++)
+
+        for(let i=0; i<fo1.length; i++)
     
         fo1[i].checked = false;
     
@@ -489,9 +466,7 @@
         helsinkine.bindPopup("<b>This area doesn't have a lot of services but is more secluded.</b><br></br>Helsinki Northeast:<br>Malmi, Puistola, Tapanila").openPopup();
         oster.bindPopup("<b>This area doesn't have a lot of services but is more secluded.</b><br></br>Östersundom:<br>Salmenkallio, Karhusaari, Puroniitty").openPopup();
     
-        
-    
-        for(var i=0; i<fo1.length; i++)
+        for(let i=0; i<fo1.length; i++)
     
         fo1[i].checked = false;
     
@@ -523,9 +498,7 @@
         helsinkise.bindPopup("<b>This area doesn't have a lot of noise and okay service availability.</b><br></br>Helsinki Southeast:<br>Kulosaari, Herttoniemi, Roihuvuori").openPopup();
         oster.bindPopup("<b>This area is very quiet and peaceful but doesn't have a lot of services. Housing prices are also be a little higher in this area.</b><br></br>Östersundom:<br>Salmenkallio, Karhusaari, Puroniitty").openPopup();
     
-    
-    
-        for(var i=0; i<fo1.length; i++)
+        for(let i=0; i<fo1.length; i++)
     
         fo1[i].checked = false;
     
@@ -560,7 +533,7 @@
         helsinkise.bindPopup("<b>This area doesn't usually have a lot of noise.</b><br></br>Helsinki Southeast:<br>Kulosaari, Herttoniemi, Roihuvuori").openPopup();
         oster.bindPopup("<b>This area doesn't usually have a lot of noise.</b><br></br>Östersundom:<br>Karhusaari, Puroniitty, Talosaari").openPopup();
     
-        for(var i=0; i<fo1.length; i++)
+        for(let i=0; i<fo1.length; i++)
     
         fo1[i].checked = false;
     
@@ -587,11 +560,11 @@
         layer_GoogleHybrid_0.setOpacity(0.8);
     
     
-        helsinkis.bindPopup("<b>This might be a good area for you.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö").openPopup();
+        helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>").openPopup();
         helsinkice.bindPopup("<b>This might be a good area for you.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila").openPopup();
         helsinkie.bindPopup("<b>This might be a good area for you.</b><br></br>Helsinki East:<br>Itäkeskus<br>Myllypuro").openPopup();
     
-        for(var i=0; i<fo1.length; i++)
+        for(let i=0; i<fo1.length; i++)
     
         fo1[i].checked = false;
     
@@ -626,7 +599,7 @@
     
             // resets the radio buttons to their default state //
     
-            for(var i=0; i<fo1.length; i++)
+            for(let i=0; i<fo1.length; i++)
     
             fo1[i].checked = false;
     
