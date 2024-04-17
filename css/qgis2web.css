@@ -18,9 +18,12 @@ p {
     margin: 0;
 }
 
-a {
+#addinlink {
 
 font-size: 35px;
+color: rgb(129, 200, 233);
+padding: 10px;
+border-radius: 5px
 
 }
 
@@ -146,4 +149,35 @@ h1 {
 
 .button {
     animation: floating 6s infinite; /* Apply the animation to the button */
+}
+
+
+/* Override Leaflet popup styles */
+.leaflet-popup-content-wrapper {
+    background-color: #9ce4ea; /* Change to your desired background color */
+    color: #000000; /* Change to your desired text color */
+}
+
+.leaflet-popup-tip-container {
+    background-color: rgba(141, 212, 225, 0.9); /* Change to your desired background color */
+}
+
+.leaflet-popup-content {
+    padding: 1px;
+    font-size: 14px;
+}
+
+.leaflet-popup-close-button {
+    color: #33656e; /* Change to your desired close button color */
+}
+
+.leaflet-popup-content-wrapper a {
+    color: #3eb7dc; /* Change to your desired link color */
+}
+
+/* Override Leaflet marker icon styles */
+.leaflet-marker-icon {
+    background-color: #3dc3d8; /* Change to your desired background color */
+    border: 2px solid #17c99f; /* Change to your desired border color */
+    border-radius: 20%; /* Optional: Add border radius for a rounded icon */
 }

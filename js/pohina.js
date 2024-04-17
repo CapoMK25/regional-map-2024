@@ -58,7 +58,7 @@
         layer_GoogleHybrid_0.setOpacity(0.8);
     
         helsinkis.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki South:<br>Kluuvi, Kamppi, Etu-Töölö<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>").openPopup();
-        helsinkice.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki Central:<br>Pasila, Kallio, Alppila<br></br>Learn more: https://en.wikipedia.org/wiki/Pasila").openPopup();
+        helsinkice.bindPopup("<b>You like good public transport and good service availability.</b><br></br>Helsinki Central<br>Pasila, Kallio, Alppila<br></br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>").openPopup();
     
         for(let i=0; i<fo1.length; i++)
     
