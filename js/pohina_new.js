@@ -203,6 +203,27 @@ function Pohina_New() {
                 { marker: helsinkice, popup: "<b>Modern urban living with ample green spaces and rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
             ],
             message: "These are perfect areas for modern and green-conscious living."
+        },
+        {
+            conditions: [inputs.rd12.checked, inputs.rd14.checked],
+            areas: [
+                { marker: helsinkice, popup: "<b>Modern urban living with ample green spaces and rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
+            ],
+            message: "These are perfect areas for modern and green-conscious living."
+        },
+        {
+            conditions: [inputs.rd12.checked, inputs.rd14.checked],
+            areas: [
+                { marker: helsinkice, popup: "<b>Modern urban living with ample green spaces and rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
+            ],
+            message: "These are perfect areas for modern and green-conscious living."
+        },
+        {
+            conditions: [inputs.rd12.checked, inputs.rd15.checked],
+            areas: [
+                { marker: helsinkice, popup: "<b>Modern urban living with rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
+            ],
+            message: "This is the perfect areas for modern living in Helsinki."
         }
               
         // More scenarios can be added here using the same structure.
