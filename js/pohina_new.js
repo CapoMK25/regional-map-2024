@@ -8,8 +8,13 @@ function Pohina_New() {
         rd7: document.getElementById("yes2"), // yes to services, option 5
         rd8: document.getElementById("no2"), // no to services, option 6
         rd10: document.getElementById("yes3"), // yes to level of noise, option 7
-        rd11: document.getElementById("no3") // no to level of noise, option 8
+        rd11: document.getElementById("no3"), // no to level of noise, option 8
+        rd12: document.getElementById("modern"), // prefers modern housing, option 9
+        rd13: document.getElementById("traditional"), // prefers traditional housing, option 10
+        rd14: document.getElementById("greenYes"), // prefers proximity to green spaces, option 11
+        rd15: document.getElementById("greenNo") // does not prefer proximity to green spaces, option 12
     };
+    
 
     const form = document.getElementById("form");
     const output = document.getElementById("output");
@@ -176,6 +181,30 @@ function Pohina_New() {
             ],
             message: "These are the perfect areas for you."
         },
+        {
+            conditions: [inputs.rd1.checked, inputs.rd8.checked, inputs.rd10.checked],
+            areas: [
+                { marker: helsinkiwe, popup: "<b>Good public transport and quieter area.</b><br>Helsinki West: Haaga, Pitäjänmäki, Kannelmäki<br>Learn more: <a href='https://en.wikipedia.org/wiki/Western_major_district_of_Helsinki' target='_blank'>Click here</a>" },
+                { marker: helsinkin, popup: "<b>Good public transport and quieter area.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä<br>Learn more: <a href='https://en.wikipedia.org/wiki/North_Helsinki' target='_blank'>Click here</a>" }
+            ],
+            message: "These areas offer both good public transport options and a quieter living environment."
+        },
+        {
+            conditions: [inputs.rd5.checked, inputs.rd7.checked, inputs.rd11.checked],
+            areas: [
+                { marker: helsinkice, popup: "<b>Modern amenities and good services.</b><br>Helsinki Central: Pasila, known for new developments and excellent services.<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" },
+                { marker: helsinkie, popup: "<b>Modern amenities and satisfactory service availability.</b><br>Helsinki East: Kalasatama, known for modern residential buildings and vibrant new shopping areas.<br>Learn more: <a href='https://en.wikipedia.org/wiki/Kalasatama' target='_blank'>Click here</a>" }
+            ],
+            message: "These areas are perfect for those who value modern living with good amenities and services."
+        },
+        {
+            conditions: [inputs.rd12.checked, inputs.rd14.checked, inputs.rd5.checked],
+            areas: [
+                { marker: helsinkice, popup: "<b>Modern urban living with ample green spaces and rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
+            ],
+            message: "These are perfect areas for modern and green-conscious living."
+        }
+              
         // More scenarios can be added here using the same structure.
     ];
 
