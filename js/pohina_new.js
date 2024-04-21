@@ -224,9 +224,16 @@ function Pohina_New() {
                 { marker: helsinkice, popup: "<b>Modern urban living with rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
             ],
             message: "This is the perfect areas for modern living in Helsinki."
+        },
+        {   // refactor this later with more areas
+            conditions: [inputs.rd13.checked, inputs.rd14.checked],
+            areas: [
+                { marker: helsinkise, popup: "<b>You prefer okay service availability, good parking and a quieter area.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori Learn more: <a href='https://en.wikipedia.org/wiki/Kulosaari' target='_blank'>Click here</a>" }
+            ],
+            message: "These are the perfect areas for traditional living in Helsinki."
         }
               
-        // More scenarios can be added here using the same structure.
+        // More scenarios will be added here using the same structure.
     ];
 
     // Find and execute the first matching scenario

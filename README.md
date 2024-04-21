@@ -1,6 +1,8 @@
 # Where To Live
 
-LINK TO NEW TEST-SITE: https://capomk25.github.io/regional-map-2024/
+## 21.4.2024
+
+Further modification done over the weekend. Currently the function code has been revamped and new user scenarios added. 
 
 ## 15.4.2024 Roadmap for the future clear.
 
