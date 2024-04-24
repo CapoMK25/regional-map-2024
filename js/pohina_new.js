@@ -45,7 +45,7 @@ function Pohina_New() {
         {
             conditions: [inputs.rd1.checked, inputs.rd5.checked, inputs.rd7.checked, inputs.rd11.checked],
             areas: [
-                { marker: helsinkis, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki South: Kluuvi, Kamppi, Etu-Töölö<br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>" },
+                { marker: helsinkis, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki South: Kluuvi, Kamppi, Etu-Töölö<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/kamppi-and-kluuvi/kamppi' target='_blank'>Click here</a>" },
                 { marker: helsinkice, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki Central: Pasila, Kallio, Alppila<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
@@ -53,65 +53,65 @@ function Pohina_New() {
         {
             conditions: [inputs.rd1.checked, inputs.rd4.checked, inputs.rd7.checked, inputs.rd11.checked],
             areas: [
-                { marker: helsinkis, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki South: Kluuvi, Kamppi, Etu-Töölö<br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>" },
-                { marker: helsinkie, popup: "<b>You also might like cheaper housing prices and good service availability.</b><br>Helsinki East: Itäkeskus, Myllypuro, Kontula" },
-                { marker: helsinkise, popup: "<b>You like good public transport and good housing.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori" }
+                { marker: helsinkis, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki South: Kluuvi, Kamppi, Etu-Töölö<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/kamppi-and-kluuvi/kamppi' target='_blank'>Click here</a>" },
+                { marker: helsinkie, popup: "<b>You also might like cheaper housing prices and good service availability.</b><br>Helsinki East: Itäkeskus, Myllypuro, Kontula<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/eastern-neighborhoods/kontula' target='_blank'>Click here</a>" },
+                { marker: helsinkise, popup: "<b>You like good public transport and good housing.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/eastern-neighborhoods/herttoniemi' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd1.checked, inputs.rd4.checked, inputs.rd7.checked, inputs.rd10.checked],
             areas: [
-                { marker: helsinkine, popup: "<b>You like cheaper housing prices and okay service availability. These areas also have good public transport.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila" },
-                { marker: helsinkie, popup: "<b>You might like cheaper housing prices and good service availability.</b><br>Helsinki East: Itäkeskus, Myllypuro, Kontula" }
+                { marker: helsinkine, popup: "<b>You like cheaper housing prices and okay service availability. These areas also have good public transport.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/malmi' target='_blank'>Click here</a>" },
+                { marker: helsinkie, popup: "<b>You might like cheaper housing prices and good service availability.</b><br>Helsinki East: Itäkeskus, Myllypuro, Kontula<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/eastern-neighborhoods/kontula' target='_blank'>Click here</a>" },
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd2.checked, inputs.rd5.checked, inputs.rd8.checked, inputs.rd10.checked],
             areas: [
-                { marker: helsinkin, popup: "<b>You prefer good parking and a quieter area.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä" },
-                { marker: helsinkine, popup: "<b>You prefer good parking and a quieter area.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila" },
-                { marker: oster, popup: "<b>You prefer good parking and a quieter area.</b><br>Östersundom: Salmenkallio, Karhusaari, Puroniitty" }
+                { marker: helsinkin, popup: "<b>You prefer good parking and a quieter area.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pakila' target='_blank'>Click here</a>" },
+                { marker: helsinkine, popup: "<b>You prefer good parking and a quieter area.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/malmi' target='_blank'>Click here</a>" },
+                { marker: oster, popup: "<b>You prefer good parking and a quieter area.</b><br>Östersundom: Salmenkallio, Karhusaari, Puroniitty<br>Learn more: <a href='https://en.wikipedia.org/wiki/Salmenkallio' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd2.checked, inputs.rd5.checked, inputs.rd8.checked, inputs.rd10.checked],
             areas: [
-                { marker: helsinkise, popup: "<b>You prefer okay service availability, good parking and a quieter area.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori" },
-                { marker: oster, popup: "<b>You prefer good parking and a quieter area.</b><br>Östersundom: Salmenkallio, Karhusaari, Puroniitty" }
+                { marker: helsinkise, popup: "<b>You prefer okay service availability, good parking and a quieter area.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/eastern-neighborhoods/herttoniemi' target='_blank'>Click here</a>" },
+                { marker: oster, popup: "<b>You prefer good parking and a quieter area.</b><br>Östersundom: Salmenkallio, Karhusaari, Puroniitty<br>Learn more: <a href='https://en.wikipedia.org/wiki/Salmenkallio' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd2.checked, inputs.rd4.checked, inputs.rd7.checked, inputs.rd11.checked],
             areas: [
-                { marker: helsinkie, popup: "<b>You prefer okay service availability, good parking and a cheaper area.</b><br>Helsinki East: Itäkeskus, Myllypuro, Kontula" }
+                { marker: helsinkie, popup: "<b>You prefer okay service availability, good parking and a cheaper area.</b><br>Helsinki East: Itäkeskus, Myllypuro, Kontula<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/eastern-neighborhoods/kontula' target='_blank'>Click here</a>" }
             ],
             message: "This is the perfect area for you."
         },
         {
             conditions: [inputs.rd4.checked, inputs.rd7.checked, inputs.rd10.checked],
             areas: [
-                { marker: helsinkine, popup: "<b>You prefer cheap housing prices.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila" },
-                { marker: helsinkie, popup: "<b>You prefer cheap housing prices.</b><br>Helsinki East: Itäkeskus, Myllypuro" }
+                { marker: helsinkine, popup: "<b>You prefer cheap housing prices.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/malmi' target='_blank'>Click here</a>" },
+                { marker: helsinkie, popup: "<b>You prefer cheap housing prices.</b><br>Helsinki East: Itäkeskus, Myllypuro<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/eastern-neighborhoods/kontula' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd4.checked, inputs.rd8.checked, inputs.rd10.checked],
             areas: [
-                { marker: helsinkine, popup: "<b>You prefer cheap housing prices.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila" }
+                { marker: helsinkine, popup: "<b>You prefer cheap housing prices.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/malmi' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd5.checked, inputs.rd7.checked, inputs.rd11.checked],
             areas: [
-                { marker: helsinkis, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki South: Kluuvi, Kamppi, Etu-Töölö<br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>" },
-                { marker: helsinkice, popup: "<b>This is a nice central area in Helsinki with a lot of everyday services and activities.</b><br>Helsinki Central: Pasila, Kallio, Alppila<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" },
-                { marker: helsinkise, popup: "<b>This is a quieter area and more secluded area that still has a good amount of services.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori<br>Learn more: <a href='https://en.wikipedia.org/wiki/East_Helsinki' target='_blank'>Click here</a>" },
+                { marker: helsinkis, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki South: Kluuvi, Kamppi, Etu-Töölö<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/kamppi-and-kluuvi/kamppi' target='_blank'>Click here</a>" },
+                { marker: helsinkice, popup: "<b>This is a nice central area in Helsinki with a lot of everyday services and activities.</b><br>Helsinki Central: Pasila, Kallio, Alppila<br>Learn more: <a href='https://www.myhelsinki.fi/see-and-do/neighbourhoods/kallio-alppiharju-and-s%C3%B6rn%C3%A4inen/alppiharju' target='_blank'>Click here</a>" },
+                { marker: helsinkise, popup: "<b>This is a quieter area and more secluded area that still has a good amount of services.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/kulosaari-and-mustikkamaa' target='_blank'>Click here</a>" },
                 { marker: helsinkiwe, popup: "<b>This is a quieter area and more secluded area that still has a good amount of services.</b><br>Helsinki West: Haaga, Pitäjänmäki, Kannelmäki<br>Learn more: <a href='https://en.wikipedia.org/wiki/Western_major_district_of_Helsinki' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
@@ -119,65 +119,65 @@ function Pohina_New() {
         {
             conditions: [inputs.rd5.checked, inputs.rd8.checked, inputs.rd10.checked],
             areas: [
-                { marker: helsinkiwe, popup: "<b>The price of housing is irrelevant to you but you prefer a quieter area.</b><br>Helsinki West: Haaga, Pitäjänmäki, Kannelmäki" },
-                { marker: helsinkise, popup: "<b>The price of housing is irrelevant to you but you prefer a quieter area.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori" },
-                { marker: oster, popup: "<b>The price of housing is irrelevant to you but you prefer a quieter area.</b><br>Östersundom: Salmenkallio, Karhusaari, Puroniitty" }
+                { marker: helsinkiwe, popup: "<b>The price of housing is irrelevant to you but you prefer a quieter area.</b><br>Helsinki West: Haaga, Pitäjänmäki, Kannelmäki<br>Learn more: <a href='https://en.wikipedia.org/wiki/Western_major_district_of_Helsinki' target='_blank'>Click here</a>" },
+                { marker: helsinkise, popup: "<b>The price of housing is irrelevant to you but you prefer a quieter area.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/kulosaari-and-mustikkamaa' target='_blank'>Click here</a>" },
+                { marker: oster, popup: "<b>The price of housing is irrelevant to you but you prefer a quieter area.</b><br>Östersundom: Salmenkallio, Karhusaari, Puroniitty<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/ostersundom' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd7.checked, inputs.rd11.checked],
             areas: [
-                { marker: helsinkis, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki South: Kluuvi, Kamppi, Etu-Töölö<br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>" },
-                { marker: helsinkice, popup: "<b>A lot of services are found at this area.</b><br>Helsinki Central: Pasila, Kallio, Alppila<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" },
-                { marker: helsinkie, popup: "<b>A lot of services are found at this area.</b><br>Helsinki East: Itäkeskus, Myllypuro" }
+                { marker: helsinkis, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki South: Kluuvi, Kamppi, Etu-Töölö<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/kamppi-and-kluuvi/kluuvi' target='_blank'>Click here</a>" },
+                { marker: helsinkice, popup: "<b>A lot of services are found at this area.</b><br>Helsinki Central: Pasila, Kallio, Alppila<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/pasila/central-and-west-pasila' target='_blank'>Click here</a>" },
+                { marker: helsinkie, popup: "<b>A lot of services are found at this area.</b><br>Helsinki East: Itäkeskus, Myllypuro <br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/eastern-neighborhoods/it%C3%A4keskus' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd7.checked, inputs.rd10.checked],
             areas: [
-                { marker: helsinkine, popup: "<b>This area has ok service availability and not a lot of noise.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila" },
-                { marker: helsinkise, popup: "<b>This area has ok service availability and not a lot of noise.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori" }
+                { marker: helsinkine, popup: "<b>This area has ok service availability and not a lot of noise.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/malmi' target='_blank'>Click here</a>" },
+                { marker: helsinkise, popup: "<b>This area has ok service availability and not a lot of noise.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/kulosaari-and-mustikkamaa' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd8.checked, inputs.rd10.checked],
             areas: [
-                { marker: helsinkin, popup: "<b>This area doesn't have a lot of services but is more secluded.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä" },
-                { marker: helsinkiwe, popup: "<b>This area doesn't have a lot of services but is more secluded.</b><br>Helsinki West: Haaga, Pitäjänmäki, Kannelmäki" },
-                { marker: helsinkine, popup: "<b>This area doesn't have a lot of services but is more secluded.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila" },
-                { marker: oster, popup: "<b>This area doesn't have a lot of services but is more secluded.</b><br>Östersundom: Salmenkallio, Karhusaari, Puroniitty" }
+                { marker: helsinkin, popup: "<b>This area doesn't have a lot of services but is more secluded.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/oulunkyla' target='_blank'>Click here</a>" },
+                { marker: helsinkiwe, popup: "<b>This area doesn't have a lot of services but is more secluded.</b><br>Helsinki West: Haaga, Pitäjänmäki, Kannelmäki<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/haaga' target='_blank'>Click here</a>" },
+                { marker: helsinkine, popup: "<b>This area doesn't have a lot of services but is more secluded.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/malmi' target='_blank'>Click here</a>" },
+                { marker: oster, popup: "<b>This area doesn't have a lot of services but is more secluded.</b><br>Östersundom: Salmenkallio, Karhusaari, Puroniitty<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/salmenkallio' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd8.checked, inputs.rd11.checked],
             areas: [
-                { marker: helsinkin, popup: "<b>This area doesn't have a lot of noise and minimal service availability.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä" },
-                { marker: helsinkise, popup: "<b>This area doesn't have a lot of noise and okay service availability.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori" },
-                { marker: oster, popup: "<b>This area is very quiet and peaceful but doesn't have a lot of services. Housing prices are also be a little higher in this area.</b><br>Östersundom: Salmenkallio, Karhusaari, Puroniitty" }
+                { marker: helsinkin, popup: "<b>This area doesn't have a lot of noise and minimal service availability.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/oulunkyla' target='_blank'>Click here</a>" },
+                { marker: helsinkise, popup: "<b>This area doesn't have a lot of noise and okay service availability.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/kulosaari-and-mustikkamaa' target='_blank'>Click here</a>" },
+                { marker: oster, popup: "<b>This area is very quiet and peaceful but doesn't have a lot of services. Housing prices are also be a little higher in this area.</b><br>Östersundom: Salmenkallio, Karhusaari, Puroniitty<br>Learn more: <a href='https://en.wikipedia.org/wiki/Salmenkallio' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd10.checked, inputs.rd2.checked, inputs.rd5.checked, inputs.rd8.checked],
             areas: [
-                { marker: helsinkiwe, popup: "<b>This area doesn't usually have a lot of noise.</b><br>Helsinki West: Haaga, Pitäjänmäki, Kannelmäki" },
-                { marker: helsinkin, popup: "<b>This area doesn't usually have a lot of noise.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä" },
-                { marker: helsinkine, popup: "<b>This area doesn't usually have a lot of noise.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila" },
-                { marker: helsinkise, popup: "<b>This area doesn't usually have a lot of noise.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori" },
-                { marker: oster, popup: "<b>This area doesn't usually have a lot of noise.</b><br>Östersundom: Karhusaari, Puroniitty, Talosaari" }
+                { marker: helsinkiwe, popup: "<b>This area doesn't usually have a lot of noise.</b><br>Helsinki West: Haaga, Pitäjänmäki, Kannelmäki<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/haaga' target='_blank'>Click here</a>" },
+                { marker: helsinkin, popup: "<b>This area doesn't usually have a lot of noise.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/oulunkyla' target='_blank'>Click here</a>" },
+                { marker: helsinkine, popup: "<b>This area doesn't usually have a lot of noise.</b><br>Helsinki Northeast: Malmi, Puistola, Tapanila<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/malmi' target='_blank'>Click here</a>" },
+                { marker: helsinkise, popup: "<b>This area doesn't usually have a lot of noise.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/kulosaari-and-mustikkamaa' target='_blank'>Click here</a>" },
+                { marker: oster, popup: "<b>This area doesn't usually have a lot of noise.</b><br>Östersundom: Karhusaari, Puroniitty, Talosaari<br>Learn more: <a href='https://en.wikipedia.org/wiki/Karhusaari' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
         {
             conditions: [inputs.rd11.checked, inputs.rd1.checked, inputs.rd5.checked, inputs.rd7.checked],
             areas: [
-                { marker: helsinkis, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki South: Kluuvi, Kamppi, Etu-Töölö<br>Learn more: <a href='https://en.wikipedia.org/wiki/Southern_major_district_of_Helsinki' target='_blank'>Click here</a>" },
-                { marker: helsinkice, popup: "<b>This might be a good area for you.</b><br>Helsinki Central: Pasila, Kallio, Alppila<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" },
-                { marker: helsinkie, popup: "<b>This might be a good area for you.</b><br>Helsinki East: Itäkeskus, Myllypuro" }
+                { marker: helsinkis, popup: "<b>You like good public transport and good service availability.</b><br>Helsinki South: Kluuvi, Kamppi, Etu-Töölö<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/t%C3%B6%C3%B6l%C3%B6-and-lapinlahti/etu-t%C3%B6%C3%B6l%C3%B6' target='_blank'>Click here</a>" },
+                { marker: helsinkice, popup: "<b>This might be a good area for you.</b><br>Helsinki Central: Pasila, Kallio, Alppila<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/kallio-alppiharju-and-s%C3%B6rn%C3%A4inen/kallio' target='_blank'>Click here</a>" },
+                { marker: helsinkie, popup: "<b>This might be a good area for you.</b><br>Helsinki East: Itäkeskus, Myllypuro<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/eastern-neighborhoods/vuosaari' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for you."
         },
@@ -185,50 +185,50 @@ function Pohina_New() {
             conditions: [inputs.rd1.checked, inputs.rd8.checked, inputs.rd10.checked],
             areas: [
                 { marker: helsinkiwe, popup: "<b>Good public transport and quieter area.</b><br>Helsinki West: Haaga, Pitäjänmäki, Kannelmäki<br>Learn more: <a href='https://en.wikipedia.org/wiki/Western_major_district_of_Helsinki' target='_blank'>Click here</a>" },
-                { marker: helsinkin, popup: "<b>Good public transport and quieter area.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä<br>Learn more: <a href='https://en.wikipedia.org/wiki/North_Helsinki' target='_blank'>Click here</a>" }
+                { marker: helsinkin, popup: "<b>Good public transport and quieter area.</b><br>Helsinki North: Pakila, Oulunkylä, Paloheinä<br>Learn more: <a href='https://www.hel.fi/en/urban-environment-and-traffic/urban-planning-and-construction/urban-development/oulunkyla' target='_blank'>Click here</a>" }
             ],
             message: "These areas offer both good public transport options and a quieter living environment."
         },
         {
             conditions: [inputs.rd5.checked, inputs.rd7.checked, inputs.rd11.checked],
             areas: [
-                { marker: helsinkice, popup: "<b>Modern amenities and good services.</b><br>Helsinki Central: Pasila, known for new developments and excellent services.<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" },
-                { marker: helsinkie, popup: "<b>Modern amenities and satisfactory service availability.</b><br>Helsinki East: Kalasatama, known for modern residential buildings and vibrant new shopping areas.<br>Learn more: <a href='https://en.wikipedia.org/wiki/Kalasatama' target='_blank'>Click here</a>" }
+                { marker: helsinkice, popup: "<b>Modern amenities and good services.</b><br>Helsinki Central: Pasila, known for new developments and excellent services.<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/pasila/central-and-west-pasila' target='_blank'>Click here</a>" },
+                { marker: helsinkie, popup: "<b>Modern amenities and satisfactory service availability.</b><br>Helsinki East: Kalasatama, known for modern residential buildings and vibrant new shopping areas.<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/kalasatama-kulosaari-and-mustikkamaa/kalasatama' target='_blank'>Click here</a>" }
             ],
             message: "These areas are perfect for those who value modern living with good amenities and services."
         },
         {
             conditions: [inputs.rd12.checked, inputs.rd14.checked, inputs.rd5.checked],
             areas: [
-                { marker: helsinkice, popup: "<b>Modern urban living with ample green spaces and rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
+                { marker: helsinkice, popup: "<b>Modern urban living with ample green spaces and rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/pasila/central-and-west-pasila' target='_blank'>Click here</a>" }
             ],
             message: "These are perfect areas for modern and green-conscious living."
         },
         {
             conditions: [inputs.rd12.checked, inputs.rd14.checked],
             areas: [
-                { marker: helsinkice, popup: "<b>Modern urban living with ample green spaces and rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
+                { marker: helsinkice, popup: "<b>Modern urban living with ample green spaces and rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/pasila/central-and-west-pasila' target='_blank'>Click here</a>" }
             ],
             message: "These are perfect areas for modern and green-conscious living."
         },
         {
             conditions: [inputs.rd12.checked, inputs.rd14.checked],
             areas: [
-                { marker: helsinkice, popup: "<b>Modern urban living with ample green spaces and rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
+                { marker: helsinkice, popup: "<b>Modern urban living with ample green spaces and rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/pasila/central-and-west-pasila' target='_blank'>Click here</a>" }
             ],
             message: "These are perfect areas for modern and green-conscious living."
         },
         {
             conditions: [inputs.rd12.checked, inputs.rd15.checked],
             areas: [
-                { marker: helsinkice, popup: "<b>Modern urban living with rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://en.wikipedia.org/wiki/Pasila' target='_blank'>Click here</a>" }
+                { marker: helsinkice, popup: "<b>Modern urban living with rich services.</b><br>Helsinki Central: Pasila, Kalasatama<br>Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do-neighbourhoods/pasila/central-and-west-pasila' target='_blank'>Click here</a>" }
             ],
             message: "This is the perfect areas for modern living in Helsinki."
         },
         {   // refactor this later with more areas
             conditions: [inputs.rd13.checked, inputs.rd14.checked],
             areas: [
-                { marker: helsinkise, popup: "<b>You prefer okay service availability, good parking and a quieter area.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori Learn more: <a href='https://en.wikipedia.org/wiki/Kulosaari' target='_blank'>Click here</a>" }
+                { marker: helsinkise, popup: "<b>You prefer okay service availability, good parking and a quieter area.</b><br>Helsinki Southeast: Kulosaari, Herttoniemi, Roihuvuori Learn more: <a href='https://www.myhelsinki.fi/en/see-and-do/neighbourhoods/kulosaari-and-mustikkamaa' target='_blank'>Click here</a>" }
             ],
             message: "These are the perfect areas for traditional living in Helsinki."
         }
