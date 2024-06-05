@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/tre.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+        <style>
+
+a.ex1:hover, a.ex1:active {font-size: 110%;}
+a.ex2:hover, a.ex2:active {font-size: 110%;}
+a.ex3:hover, a.ex3:active {font-size: 110%;}    
+
+body {
+    background-image: url("images/Tampere.jpg"); 
+}
+        
+        #map {
+            width: 1700px;
+            height: 1000px;
+            max-width: 95%;
+            max-height: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: #000000;
+            border-radius: 10px;
+            border-color: black;
+            border-style: solid;
+        }
+
+footer {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+        </style>
+
+
+        <title>Where to live</title>
+
+<script type="text/javascript">
+
+
+</script>
+
+
+    </head>
+
+
+    <body>
+
+        
+    <br>
+    </br>
+
+        <h1>Where to Live </h1>
+
+
+    <br>
+    </br>
+
+    <h2>This map will pick the perfect area inside Tampere for you to live.</h2>
+
+    <br>
+    </br>
+
+    <h2>Here you can find more preliminary information about relocating to Tampere:</h2>
+    <div id="addinlink">
+    <a href="https://www.tampere.fi/en/relocation-guide-tampere" target="_blank">Link to Tampere City Info</a>
+    </div>
+    
+    <br>
+    </br>
+
+    <h2>But first we need to know a little about your preferences.</h2>
+
+    <br>
+    </br>
+
+    <form id ="form">
+
+        <div class="transbox">
+            <p><b>Do you prefer an area with good public transport or good parking?</b><br>
+                <input type="radio" name="option1" value="op1" id="pt">Public transport</input><br>
+                <input type="radio" name="option1" value="op2" id="gp">Good parking<br>
+            </p>
+        </div>
+    
+        <br>
+    
+        <div class="transbox">
+            <p><b>What price range are you looking for?</b><br>
+                <input id="yes" name="option2" type ="radio" value="op4">Lower</input><br>
+                <input id="no" name="option2" type ="radio" value="op5">Higher</input><br>
+            </p>
+        </div>
+    
+        <br>
+    
+        <div class="transbox">
+            <p><b>Would you like your area to be full of everyday services and activities?</b><br>
+                <input id="yes2" name="option3" type ="radio" value="op7">Yes</input><br>
+                <input id="no2" name="option3" type ="radio" value="op8">No</input><br>
+            </p>
+        </div>
+    
+        <br>
+    
+        <div class="transbox">
+            <p><b>Does the level of noise affect your housing area decision?</b><br>
+                <input id="yes3" name="option4" type ="radio" value="op10">Yes</input><br>
+                <input id="no3" name="option4" type ="radio" value="op11">No</input><br>
+            </p>
+        </div>
+    
+        <br>
+    
+        <div class="transbox">
+            <p><b>Do you prefer more modern or more traditional housing styles?</b><br>
+                <input id="modern" name="option5" type="radio" value="op12">Modern</input><br>
+                <input id="traditional" name="option5" type="radio" value="op13">Traditional</input><br>
+            </p>
+        </div>
+    
+        <br>
+    
+        <div class="transbox">
+            <p><b>Is proximity to green spaces and/or nature important to you?</b><br>
+                <input id="greenYes" name="option6" type="radio" value="op14">Yes</input><br>
+                <input id="greenNo" name="option6" type="radio" value="op15">No</input><br>
+            </p>
+        </div>
+    
+    </form>
+    
+
+<br>
+
+
+<button type="button" class="button" role="button" onclick="Pohina_New()">Submit</button>
+<button type="button" class="button" role="button" onclick=resetForm() {>Reset</button>
+
+
+ <p id="output"></p>
+
+
+<br>
+
+
+        <div id="map" style="width: 2000px; height: 380px;">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/pohina_new.js"></script>
+        <script src="js/reset.js"></script>
+
+
+
+
+
+
+
+
+        <script>
+        var map = L.map('map', {
+            zoomControl: true, maxZoom: 28, minZoom: 1
+        }).fitBounds([[61.453, 23.6], [61.527, 23.922]]);  // Updated coordinates for Tampere
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_GoogleHybrid_0');
+        map.getPane('pane_GoogleHybrid_0').style.zIndex = 400;
+        var layer_GoogleHybrid_0 = L.tileLayer('http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}', {
+            pane: 'pane_GoogleHybrid_0',
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 0,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 18
+        });
+        layer_GoogleHybrid_0;
+        map.addLayer(layer_GoogleHybrid_0);
+
+        
+        function pop_Seutukartta_liikenne_juna_asema_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['tietopalvelu_id'] !== null ? autolinker.link(feature.properties['tietopalvelu_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['asemapaikka'] !== null ? autolinker.link(feature.properties['asemapaikka'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['mtryhm'] !== null ? autolinker.link(feature.properties['mtryhm'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+
+
+
+
+        // Markers based on the main parts of the city //
+
+        var helsinkis = L.marker([60.16591890867457, 24.941673123845824]).addTo(map);
+        helsinkis.bindPopup("<b>Helsinki South</b><br>Southern Major District");
+
+        helsinkis.setOpacity (0.0);
+
+
+        var helsinkice = L.marker([60.197483495056204, 24.931579792222763]).addTo(map);
+        helsinkice.bindPopup("<b>Helsinki Central </b><br>Central Major District");
+
+        helsinkice.setOpacity(0.0);
+
+
+        var helsinkiwe = L.marker([60.22190779360781, 24.896233151338762]).addTo(map);
+        helsinkiwe.bindPopup("<b>Helsinki West </b><br>Western Major District");
+
+        helsinkiwe.setOpacity(0.0);
+
+
+        var helsinkin = L.marker([60.234987362157014, 24.95557518935707]).addTo(map);
+        helsinkin.bindPopup("<b>Helsinki North</b><br>Northern Major District");
+
+        helsinkin.setOpacity(0.0);
+        
+
+
+        var helsinkine = L.marker([60.26055869396149, 25.02100349314523]).addTo(map);
+        helsinkine.bindPopup("<b>Helsinki Northeast</b><br>North-Eastern Major District");
+
+        helsinkine.setOpacity(0.0);
+        
+
+        var helsinkise = L.marker([60.19032101074587, 25.027061996911623]).addTo(map);
+        helsinkise.bindPopup("<b>Helsinki Southeast</b><br>South-Eastern Major District");
+
+        helsinkise.setOpacity(0.0);
+        
+
+       var helsinkie = L.marker([60.214980435594, 25.079148763330014]).addTo(map);
+        helsinkie.bindPopup("<b>Helsinki East</b><br>Eastern Major District");
+
+        helsinkie.setOpacity(0.0);
+
+
+
+        var oster = L.marker([60.251937174076886, 25.17739540858627]).addTo(map);
+        oster.bindPopup("<b>Östersundom</b><br>Östersundom Major District");
+
+        oster.setOpacity(0.0);
+
+
+
+
+
+
+
+        
+
+        function style_Seutukartta_liikenne_juna_asema_1_0() {
+            return {
+                pane: 'pane_Seutukartta_liikenne_juna_asema_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 0.8,
+                fillColor: 'rgba(65, 131, 215, 1)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Seutukartta_liikenne_juna_asema_1');
+        map.getPane('pane_Seutukartta_liikenne_juna_asema_1').style.zIndex = 401;
+        map.getPane('pane_Seutukartta_liikenne_juna_asema_1').style['mix-blend-mode'] = 'normal';
+        var layer_Seutukartta_liikenne_juna_asema_1 = L.geoJson(null, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Seutukartta_liikenne_juna_asema_1',
+            layerName: 'layer_Seutukartta_liikenne_juna_asema_1',
+            style: style_Seutukartta_liikenne_juna_asema_1_0,
+            pane: 'pane_Seutukartta_liikenne_juna_asema_1',
+            onEachFeature: pop_Seutukartta_liikenne_juna_asema_1
+        });
+        function getSeutukartta_liikenne_juna_asema_1Json(geojson) {
+            layer_Seutukartta_liikenne_juna_asema_1.addData(geojson);
+        };
+        bounds_group.addLayer(layer_Seutukartta_liikenne_juna_asema_1);
+        map.addLayer(layer_Seutukartta_liikenne_juna_asema_1);
+        function pop_Seutukartta_liikenne_lentoasemat_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['tietopalvelu_id'] !== null ? autolinker.link(feature.properties['tietopalvelu_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['lentokentta'] !== null ? autolinker.link(feature.properties['lentokentta'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['mtryhm'] !== null ? autolinker.link(feature.properties['mtryhm'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Seutukartta_liikenne_lentoasemat_2_0() {
+            return {
+                pane: 'pane_Seutukartta_liikenne_lentoasemat_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 0.8,
+                fillColor: 'rgba(255,255,0.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Seutukartta_liikenne_lentoasemat_2');
+        map.getPane('pane_Seutukartta_liikenne_lentoasemat_2').style.zIndex = 402;
+        map.getPane('pane_Seutukartta_liikenne_lentoasemat_2').style['mix-blend-mode'] = 'normal';
+        var layer_Seutukartta_liikenne_lentoasemat_2 = L.geoJson(null, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Seutukartta_liikenne_lentoasemat_2',
+            layerName: 'layer_Seutukartta_liikenne_lentoasemat_2',
+            style: style_Seutukartta_liikenne_lentoasemat_2_0,
+            pane: 'pane_Seutukartta_liikenne_lentoasemat_2',
+            onEachFeature: pop_Seutukartta_liikenne_lentoasemat_2
+        });
+        function getSeutukartta_liikenne_lentoasemat_2Json(geojson) {
+            layer_Seutukartta_liikenne_lentoasemat_2.addData(geojson);
+        };
+        bounds_group.addLayer(layer_Seutukartta_liikenne_lentoasemat_2);
+        map.addLayer(layer_Seutukartta_liikenne_lentoasemat_2);
+        function pop_Seutukartta_liikenne_metroasemat_3(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['tietopalvelu_id'] !== null ? autolinker.link(feature.properties['tietopalvelu_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['metroasema'] !== null ? autolinker.link(feature.properties['metroasema'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['mtryhm'] !== null ? autolinker.link(feature.properties['mtryhm'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Seutukartta_liikenne_metroasemat_3_0() {
+            return {
+                pane: 'pane_Seutukartta_liikenne_metroasemat_3',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 0.8,
+                fillColor: 'rgba(207,0,3,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Seutukartta_liikenne_metroasemat_3');
+        map.getPane('pane_Seutukartta_liikenne_metroasemat_3').style.zIndex = 403;
+        map.getPane('pane_Seutukartta_liikenne_metroasemat_3').style['mix-blend-mode'] = 'normal';
+        var layer_Seutukartta_liikenne_metroasemat_3 = L.geoJson(null, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Seutukartta_liikenne_metroasemat_3',
+            layerName: 'layer_Seutukartta_liikenne_metroasemat_3',
+            style: style_Seutukartta_liikenne_metroasemat_3_0,
+            pane: 'pane_Seutukartta_liikenne_metroasemat_3',
+            onEachFeature: pop_Seutukartta_liikenne_metroasemat_3
+        });
+        function getSeutukartta_liikenne_metroasemat_3Json(geojson) {
+            layer_Seutukartta_liikenne_metroasemat_3.addData(geojson);
+        };
+        bounds_group.addLayer(layer_Seutukartta_liikenne_metroasemat_3);
+        map.addLayer(layer_Seutukartta_liikenne_metroasemat_3);
+        function pop_Seutukartta_liikenne_paatiet_4(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['tietopalvelu_id'] !== null ? autolinker.link(feature.properties['tietopalvelu_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['tieluokka_nimi'] !== null ? autolinker.link(feature.properties['tieluokka_nimi'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['nimi'] !== null ? autolinker.link(feature.properties['nimi'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['tieluokka_nro'] !== null ? autolinker.link(feature.properties['tieluokka_nro'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['mtryhm'] !== null ? autolinker.link(feature.properties['mtryhm'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+       
+
+        function style_Tyopaikkaruudukko_2018_6_0() {
+            return {
+                pane: 'pane_Tyopaikkaruudukko_2018_6',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(213,180,60,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Tyopaikkaruudukko_2018_6');
+        map.getPane('pane_Tyopaikkaruudukko_2018_6').style.zIndex = 406;
+        map.getPane('pane_Tyopaikkaruudukko_2018_6').style['mix-blend-mode'] = 'normal';
+        var layer_Tyopaikkaruudukko_2018_6 = L.geoJson(null, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Tyopaikkaruudukko_2018_6',
+            layerName: 'layer_Tyopaikkaruudukko_2018_6',
+            style: style_Tyopaikkaruudukko_2018_6_0,
+            pane: 'pane_Tyopaikkaruudukko_2018_6',
+            onEachFeature: pop_Tyopaikkaruudukko_2018_6
+        });
+        function getTyopaikkaruudukko_2018_6Json(geojson) {
+            layer_Tyopaikkaruudukko_2018_6.addData(geojson);
+        };
+        bounds_group.addLayer(layer_Tyopaikkaruudukko_2018_6);
+        map.addLayer(layer_Tyopaikkaruudukko_2018_6);
+
+        </script>
+        <script src='https://kartta.hel.fi/ws/geoserver/avoindata/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=avoindata:Seutukartta_liikenne_juna_asema&SRSNAME=EPSG:4326&outputFormat=text%2Fjavascript&format_options=callback%3AgetSeutukartta_liikenne_juna_asema_1Json'></script>
+        <script src='https://kartta.hel.fi/ws/geoserver/avoindata/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=avoindata:Seutukartta_liikenne_lentoasemat&SRSNAME=EPSG:4326&outputFormat=text%2Fjavascript&format_options=callback%3AgetSeutukartta_liikenne_lentoasemat_2Json'></script>
+        <script src='https://kartta.hel.fi/ws/geoserver/avoindata/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=avoindata:Seutukartta_liikenne_metroasemat&SRSNAME=EPSG:4326&outputFormat=text%2Fjavascript&format_options=callback%3AgetSeutukartta_liikenne_metroasemat_3Json'></script>
+        <script src='https://kartta.hel.fi/ws/geoserver/avoindata/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=avoindata:Seutukartta_liikenne_paatiet&SRSNAME=EPSG:4326&outputFormat=text%2Fjavascript&format_options=callback%3AgetSeutukartta_liikenne_paatiet_4Json'></script>
+        <script src='https://kartta.hel.fi/ws/geoserver/avoindata/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=avoindata:Pysakointipaikat_alue&SRSNAME=EPSG:4326&outputFormat=text%2Fjavascript&format_options=callback%3AgetPysakointipaikat_alue_5Json'></script>
+        <script src='https://kartta.hsy.fi/geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=asuminen_ja_maankaytto:Tyopaikkaruudukko_2018&SRSNAME=EPSG:4326&outputFormat=text%2Fjavascript&format_options=callback%3AgetTyopaikkaruudukko_2018_6Json'></script>
+
+        <footer>
+            <p>Data from: <a class="ex1" href="https://hri.fi/en_gb/terms-and-conditions/"> Helsinki region info</a></p>
+           <p>Background image <a class="ex2" href= "https://unsplash.com/license"> license</a><br></p>
+           <p>Contact information: <a class="ex3" href="mailto:bgj367@myy.haaga-helia.fi">pöhinä@gmail.com</a></p>
+          </footer>
+
+    </body>
+</html>
