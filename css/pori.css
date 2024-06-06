@@ -5,23 +5,23 @@ body {
     font-size: 16px;
     font-weight: 200;
     font-style: normal;
-    color: rgb(255, 255, 255);
+    color: rgb(254, 237, 235);
     margin: 0;
     padding: 0;
     text-align: center;
-    background-image: url("images/Tampere.jpg");
+    background-image: url("images/Pori.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
 h1, h2, h3 {
     margin: 0;
-    color: #ffffff;
+    color: #f2f2f2;
 }
 
 p {
     margin: 0;
-    color: #ffffff;
+    color: #f2f2f2;
 }
 
 #addinlink {

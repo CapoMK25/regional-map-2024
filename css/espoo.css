@@ -5,11 +5,11 @@ body {
     font-size: 16px;
     font-weight: 200;
     font-style: normal;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-image: url("images/Tampere.jpg");
+    background-image: url("images/Espoo.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -70,9 +70,9 @@ h1 {
 }
 
 #output {
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: 5px 5px 5px #000000;
 }
 
 /* Container Styles */

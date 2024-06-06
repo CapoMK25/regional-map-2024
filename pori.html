@@ -9,7 +9,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="stylesheet" href="css/leaflet.css">
-        <link rel="stylesheet" href="css/vantaa.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/pori.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet"> 
@@ -21,7 +21,7 @@ a.ex2:hover, a.ex2:active {font-size: 110%;}
 a.ex3:hover, a.ex3:active {font-size: 110%;}    
 
 body {
-    background-image: url("images/Vantaa.jpg"); 
+    background-image: url("images/Pori.jpg"); 
 }
         
         #map {
@@ -71,14 +71,14 @@ footer {
     <br>
     </br>
 
-    <h2>This map will pick the perfect area inside Vantaa for you to live.</h2>
+    <h2>This map will pick the perfect area inside Pori for you to live.</h2>
 
     <br>
     </br>
 
-    <h2>Here you can find more preliminary information about relocating to Vantaa:</h2>
+    <h2>Here you can find more preliminary information about relocating to Pori:</h2>
     <div id="addinlink">
-    <a href="https://www.infofinland.fi/en/vantaa/moving-to-vantaa" target="_blank">Link to Vantaa City Info</a>
+    <a href="https://www.pori.fi/en/move-to-pori/" target="_blank">Link to Pori City Info</a>
     </div>
     
     <br>
@@ -183,7 +183,7 @@ footer {
         <script>
         var map = L.map('map', {
             zoomControl: true, maxZoom: 28, minZoom: 1
-        }).fitBounds([[61.453, 23.6], [61.527, 23.922]]);  // Updated coordinates
+        }).fitBounds([[61.453, 23.6], [61.527, 23.922]]);  // Updated coordinates for Tampere
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
