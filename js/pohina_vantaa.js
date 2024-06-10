@@ -53,7 +53,28 @@ function pohina_vantaa() {
                 { marker: martinlaakso, popup: "<b>You like good public transport and good service availability.</b><br>Martinlaakso<br>Learn more: <a href='https://en.wikipedia.org/wiki/Martinlaakso' target='_blank'>Click here</a>" },
             ],
             message: "These are the perfect areas for you."
+        },
+        {
+            conditions: [inputs.rd2.checked, inputs.rd4.checked, inputs.rd7.checked, inputs.rd10.checked],
+            areas: [
+                { marker: leinela, popup: "<b>You prefer good parking, lower price range, and good services.</b><br>Leinelä<br>Learn more: <a href='https://www.vantaa.fi/en/regions-and-districts/leinela-major-region' target='_blank'>Click here</a>" },
+                { marker: rekola, popup: "<b>You prefer good parking, lower price range, and good services.</b><br>Rekola<br>Learn more: <a href='https://www.vantaa.fi/en/regions-and-districts/rekola-major-region' target='_blank'>Click here</a>" },
+                { marker: vaarala, popup: "<b>You prefer good parking, lower price range, and good services.</b><br>Vaarala<br>Learn more: <a href='https://www.vantaa.fi/en/regions-and-districts/vaarala-major-region' target='_blank'>Click here</a>" },
+                { marker: ilola, popup: "<b>You prefer good parking, lower price range, and good services.</b><br>Ilola<br>Learn more: <a href='https://www.vantaa.fi/en/regions-and-districts/ilola-major-region' target='_blank'>Click here</a>" },
+                { marker: ruskeasanta, popup: "<b>You prefer good parking, lower price range, and good services.</b><br>Ruskeasanta<br>Learn more: <a href='https://www.vantaa.fi/en/regions-and-districts/ruskeasanta-major-region' target='_blank'>Click here</a>" },
+            ],
+            message: "These areas fit your preferences perfectly."
+        },
+        {
+            conditions: [inputs.rd1.checked, inputs.rd4.checked, inputs.rd8.checked, inputs.rd10.checked],
+            areas: [
+                { marker: kuninkaanmaki, popup: "<b>You like good public transport, lower price range, and don't mind noise.</b><br>Kuninkaanmäki<br>Learn more: <a href='https://www.vantaa.fi/en/regions-and-districts/kuninkaanmaki-major-region' target='_blank'>Click here</a>" },
+                { marker: nikinmaki, popup: "<b>You like good public transport, lower price range, and don't mind noise.</b><br>Nikinmäki<br>Learn more: <a href='https://www.vantaa.fi/en/regions-and-districts/nikinmaki-major-region' target='_blank'>Click here</a>" },
+                { marker: ilola, popup: "<b>You like good public transport, lower price range, and don't mind noise.</b><br>Ilola<br>Learn more: <a href='https://www.vantaa.fi/en/regions-and-districts/ilola-major-region' target='_blank'>Click here</a>" },
+            ],
+            message: "These areas are good for you."
         }
+        // Add more scenarios as needed
         
     ];
 
