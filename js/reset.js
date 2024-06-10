@@ -1,13 +1,23 @@
 function resetForm() {
     // Reset marker opacities
-    helsinkis.setOpacity(0.0);
-    helsinkice.setOpacity(0.0);
-    helsinkiwe.setOpacity(0.0);
-    helsinkin.setOpacity(0.0);
-    helsinkine.setOpacity(0.0);
-    helsinkise.setOpacity(0.0);
-    helsinkie.setOpacity(0.0);
-    oster.setOpacity(0.0);
+    tikkurila.setOpacity(0.0);
+    hiekkaharju.setOpacity(0.0);
+    koivukyla.setOpacity(0.0);
+    rekola.setOpacity(0.0);
+    korso.setOpacity(0.0);
+    hakunila.setOpacity(0.0);
+    kuninkaanmaki.setOpacity(0.0);
+    vaarala.setOpacity(0.0);
+    leinela.setOpacity(0.0);
+    nikinmaki.setOpacity(0.0);
+    ilola.setOpacity(0.0);
+    aviapolis.setOpacity(0.0);
+    tammisto.setOpacity(0.0);
+    ruskeasanta.setOpacity(0.0);
+    ylasto.setOpacity(0.0);
+    martinlaakso.setOpacity(0.0);
+    myyrmaki.setOpacity(0.0);
+    kivisto.setOpacity(0.0);
 
     // Reset the output message
     document.getElementById("output").innerHTML = "";

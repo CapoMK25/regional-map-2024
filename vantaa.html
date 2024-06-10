@@ -127,29 +127,13 @@ footer {
     
         <br>
     
-        <div class="transbox">
-            <p><b>Do you prefer more modern or more traditional housing styles?</b><br>
-                <input id="modern" name="option5" type="radio" value="op12">Modern</input><br>
-                <input id="traditional" name="option5" type="radio" value="op13">Traditional</input><br>
-            </p>
-        </div>
-    
-        <br>
-    
-        <div class="transbox">
-            <p><b>Is proximity to green spaces and/or nature important to you?</b><br>
-                <input id="greenYes" name="option6" type="radio" value="op14">Yes</input><br>
-                <input id="greenNo" name="option6" type="radio" value="op15">No</input><br>
-            </p>
-        </div>
-    
     </form>
     
 
 <br>
 
 
-<button type="button" class="button" role="button" onclick="Pohina_New()">Submit</button>
+<button type="button" class="button" role="button" onclick="pohina_vantaa()">Submit</button>
 <button type="button" class="button" role="button" onclick=resetForm() {>Reset</button>
 
 
@@ -170,7 +154,7 @@ footer {
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
-        <script src="js/pohina_new.js"></script>
+        <script src="js/pohina_vantaa.js"></script>
         <script src="js/reset.js"></script>
 
 
@@ -222,66 +206,81 @@ footer {
 
 
 
-
-
         // Markers based on the main parts of the city //
 
-        var helsinkis = L.marker([60.16591890867457, 24.941673123845824]).addTo(map);
-        helsinkis.bindPopup("<b>Helsinki South</b><br>Southern Major District");
+        let tikkurila = L.marker([60.293454292925354, 25.03746456309692]).addTo(map);
+        tikkurila.bindPopup("<b>Tikkurila</b>");
+        tikkurila.setOpacity (0.0);
 
-        helsinkis.setOpacity (0.0);
+        let hiekkaharju = L.marker([60.3036628371311, 25.046850492903413]).addTo(map);
+        hiekkaharju.bindPopup("<b>Hiekkaharju</b>");
+        hiekkaharju.setOpacity(0.0);
 
+        let koivukyla = L.marker([60.32284974222906, 25.057036415792137]).addTo(map);
+        koivukyla.bindPopup("<b>Koivukylä</b>");
+        koivukyla.setOpacity(0.0);
 
-        var helsinkice = L.marker([60.197483495056204, 24.931579792222763]).addTo(map);
-        helsinkice.bindPopup("<b>Helsinki Central </b><br>Central Major District");
-
-        helsinkice.setOpacity(0.0);
-
-
-        var helsinkiwe = L.marker([60.22190779360781, 24.896233151338762]).addTo(map);
-        helsinkiwe.bindPopup("<b>Helsinki West </b><br>Western Major District");
-
-        helsinkiwe.setOpacity(0.0);
-
-
-        var helsinkin = L.marker([60.234987362157014, 24.95557518935707]).addTo(map);
-        helsinkin.bindPopup("<b>Helsinki North</b><br>Northern Major District");
-
-        helsinkin.setOpacity(0.0);
+        let rekola = L.marker([60.33018898198313, 25.072721842567752]).addTo(map);
+        rekola.bindPopup("<b>Rekola</b>");
+        rekola.setOpacity(0.0);
         
-
-
-        var helsinkine = L.marker([60.26055869396149, 25.02100349314523]).addTo(map);
-        helsinkine.bindPopup("<b>Helsinki Northeast</b><br>North-Eastern Major District");
-
-        helsinkine.setOpacity(0.0);
+        let korso = L.marker([60.35076708989662, 25.076541307972885]).addTo(map);
+        korso.bindPopup("<b>Korso</b>");
+        korso.setOpacity(0.0);
         
-
-        var helsinkise = L.marker([60.19032101074587, 25.027061996911623]).addTo(map);
-        helsinkise.bindPopup("<b>Helsinki Southeast</b><br>South-Eastern Major District");
-
-        helsinkise.setOpacity(0.0);
+        let hakunila = L.marker([60.27825380549731, 25.10573790666925]).addTo(map);
+        hakunila.bindPopup("<b>Hakunila</b>");
+        hakunila.setOpacity(0.0);
         
+       let kuninkaanmaki = L.marker([60.30529485743157, 25.119884151198306]).addTo(map);
+        kuninkaanmaki.bindPopup("<b>Kuninkaanmäki</b>");
+        kuninkaanmaki.setOpacity(0.0);
 
-       var helsinkie = L.marker([60.214980435594, 25.079148763330014]).addTo(map);
-        helsinkie.bindPopup("<b>Helsinki East</b><br>Eastern Major District");
+        let vaarala = L.marker([60.26236331486346, 25.09527612893031]).addTo(map);
+        vaarala.bindPopup("<b>Vaarala</b>");
+        vaarala.setOpacity(0.0);
 
-        helsinkie.setOpacity(0.0);
+        let leinela = L.marker([60.32303596844728, 25.03910422353427]).addTo(map);
+        leinela.bindPopup("<b>Leinelä</b>");
+        leinela.setOpacity(0.0);
+
+        let nikinmaki = L.marker([60.33985902383519, 25.13281184280213]).addTo(map);
+        nikinmaki.bindPopup("<b>Nikinmäki</b>");
+        nikinmaki.setOpacity(0.0);
+
+        let ilola = L.marker([60.326401273340515, 25.0215036997861]).addTo(map);
+        ilola.bindPopup("<b>Ilola</b>");
+        ilola.setOpacity(0.0);
+
+        let aviapolis = L.marker([60.30292508159172, 24.965412584270364]).addTo(map);
+        aviapolis.bindPopup("<b>Aviapolis</b>");
+        aviapolis.setOpacity(0.0);
+
+        let tammisto = L.marker([60.2743790230851, 24.969310019274285]).addTo(map);
+        tammisto.bindPopup("<b>Tammisto</b>");
+        tammisto.setOpacity(0.0);
+
+        let ruskeasanta = L.marker([60.312720863758045, 25.006407824221487]).addTo(map);
+        ruskeasanta.bindPopup("<b>Ruskeasanta</b>");
+        ruskeasanta.setOpacity(0.0);
+
+        let ylasto = L.marker([60.28388007633845, 24.913855449096484]).addTo(map);
+        ylasto.bindPopup("<b>Ylastö</b>");
+        ylasto.setOpacity(0.0);
+
+        let martinlaakso = L.marker([60.27849717288033, 24.85069416020883]).addTo(map);
+        martinlaakso.bindPopup("<b>Martinlaakso</b>");
+        martinlaakso.setOpacity(0.0);
+
+        let myyrmaki = L.marker([60.266363438326835, 24.85100002635446]).addTo(map);
+        myyrmaki.bindPopup("<b>Myyrmäki</b>");
+        myyrmaki.setOpacity(0.0);
+
+        let kivisto = L.marker([60.32251997130529, 24.840600589419267]).addTo(map);
+        kivisto.bindPopup("<b>Kivistö</b>");
+        kivisto.setOpacity(0.0);
 
 
-
-        var oster = L.marker([60.251937174076886, 25.17739540858627]).addTo(map);
-        oster.bindPopup("<b>Östersundom</b><br>Östersundom Major District");
-
-        oster.setOpacity(0.0);
-
-
-
-
-
-
-
-        
 
         function style_Seutukartta_liikenne_juna_asema_1_0() {
             return {
